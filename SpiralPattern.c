@@ -9,11 +9,11 @@ int main()
     int i, j, k = 1, p, q, r, a[n][n];
     for (i = 0; i < (n + 1) / 2; i++)
     {
-        for (j = i; j < n - i; j++)
+        for (j = i; j < n - i - 1; j++)
         {
             a[i][j] = k++;
         }
-        for (p = i + 1; p <= n - i - 1; p++)
+        for (p = i; p <= n - i - 1; p++)
         {
             a[p][n - i - 1] = k++;
         }
